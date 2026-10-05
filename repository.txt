@@ -1,0 +1,75 @@
+MILESTONE 1: REQUIREMENT ANALYSIS & ARCHITECTURAL DESIGN
+
+Project Title: EMO-VOX: Emotion-Aware Voice and Expression Desktop Companion
+Domain: Artificial Intelligence / Affective Computing / Human-Computer Interaction
+Academic Year: 2026–2027 | Target Completion Date: November 3, 2026
+Document Type: Milestone 1 Submission Report (2-Page Format)
+
+--------------------------------------------------------------------------------
+
+1. EXECUTIVE SUMMARY & PROBLEM STATEMENT
+
+Commercial virtual assistants (e.g., Alexa, Siri) process user commands rigidly without recognizing the user's emotional or physical state. This creates robotic, tone-deaf interactions during moments of user stress, cognitive fatigue, or frustration.
+
+EMO-VOX is a zero-budget, privacy-first desktop companion that bridges the gap between human affective states and digital voice assistants. By combining edge-based computer vision, speech synthesis, and cloud-based Large Language Model (LLM) reasoning, EMO-VOX evaluates facial expressions and vocal tone to adapt its conversational empathy, pacing, and assistance dynamically.
+
+Key Objectives:
+• Multimodal Sentiment Processing: Perform real-time facial expression classification alongside vocal audio parsing.
+• Empathetic Context Injection: Dynamically alter LLM prompt conditions based on detected user mood.
+• Edge-Based Data Privacy: Process facial feature extraction locally on the client machine to safeguard biometric data.
+
+
+2. ALIGNMENT WITH UN SUSTAINABLE DEVELOPMENT GOALS (SDGs)
+
+• SDG 3 (Good Health and Well-being): Reduces digital burnout and work fatigue by offering proactive stress tracking, guided breathing breaks, and an empathetic voice interface.
+• SDG 4 (Quality Education): Functions as an adaptive learning companion that senses student confusion or frustration and simplifies complex academic concepts accordingly.
+• SDG 9 (Industry, Innovation, and Infrastructure): Demonstrates high-performance Edge AI on low-cost hardware, proving that advanced multimodal AI can be deployed without expensive GPU infrastructure.
+
+
+3. HIGH-LEVEL SYSTEM ARCHITECTURE & TECH STACK
+
+Input Layer: Webcam (Video Stream) + Microphone (Audio Input)
+    │
+Processing Layer: OpenCV + DeepFace (Local Edge) + SpeechRecognition Module
+    │
+Reasoning Engine: Google Gemini API (Prompt Context Injection)
+    │
+Output Layer: CustomTkinter Dark GUI + pyttsx3 Speech Output
+
+• Computer Vision Engine: OpenCV (frame extraction) & DeepFace (local facial expression classification).
+• Audio & Speech Engine: SpeechRecognition / PyAudio (mic input) & pyttsx3 (offline text-to-speech output).
+• Reasoning Engine: Google Gemini LLM API (empathic response generation via context injection).
+• User Interface: CustomTkinter (frameless, floating dark-mode GUI with real-time visualizers).
+
+===================== INSERT PAGE BREAK HERE (CTRL + ENTER) =====================
+
+4. KEY TECHNICAL DIFFERENTIATORS & NOVELTIES
+
+1. Visual-Acoustic Congruence Engine ("Masked Emotion" Detection): Cross-references facial expression metrics against vocal pitch/volume variance to identify suppressed emotions (e.g., forced smiles masking high stress).
+2. Temporal Emotional Inertia: Implements a 30-second rolling queue (moving average) to smooth frame-by-frame computer vision noise, facial occlusion, and transient blinking.
+3. OS-Level Affective Automation: Triggers native OS actions during sustained user burnout (>2 minutes), such as activating "Do Not Disturb" mode, adjusting screen color temperature, or launching a quick relaxation prompt.
+4. Zero-Cloud Biometric Privacy: Processes all webcam video streams locally on the edge device; personal interaction logs are stored in an encrypted local SQLite database.
+5. Green AI Architecture: Handles standard system commands offline via rule-based logic, escalating to cloud LLM endpoints only when emotional or complex reasoning is required.
+
+
+5. STAKEHOLDER BENEFIT ANALYSIS
+
+• For Students: Offers non-judgmental conversational practice, burnout monitoring, and customized study support without requiring high-end GPU hardware.
+• For Educational Institutions: Delivers a zero-infrastructure-cost showcase for campus innovation labs, hackathons, and research publications aligned with institutional accreditation standards (NAAC/NBA).
+• For Industry & Governance: Provides a privacy-compliant, open-source model bridging digital accessibility across low-resource environments.
+
+
+6. PROJECT ROADMAP & MILESTONE SCHEDULE (Target Completion: Nov 3, 2026)
+
+• Milestone 1 (Oct 1 – Oct 6): Requirement Analysis, Architectural Mapping, Literature Review, SDG Mapping [STATUS: Submitted]
+• Milestone 2 (Oct 7 – Oct 15): System Prompt Templates, CustomTkinter GUI Wireframing, SQLite Database Schema [STATUS: Pending]
+• Milestone 3 (Oct 16 – Oct 23): Core Engine Prototyping: OpenCV/DeepFace Integration & Gemini API Loop [STATUS: Pending]
+• Milestone 4 (Oct 24 – Oct 30): Multithreading Optimization, Latency Measurement Matrix, OS Automation Hooks [STATUS: Pending]
+• Milestone 5 (Oct 31 – Nov 3): Final System Integration, Benchmarking, Project Report Documentation & Viva Defense [STATUS: Pending]
+
+
+7. SUBMISSION VERIFICATION & REPOSITORY ARTIFACTS
+
+• GitHub Repository URL: https://github.com/princepandole88-jpg/EMO-VOX
+• Project Documentation Drive: https://drive.google.com/your-documentation-link
+
